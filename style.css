@@ -1,0 +1,327 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for table*/
+table {
+    border: 2px solid purple;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid palevioletred;
+    padding: 2%;
+}
+
+th {
+    background-color: plum;
+    color: pink;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+tr:nth-of-type(even) {
+    background-color: rgb(47, 137, 104);
+    color: paleturquoise;
+}
+
+
+/* Style rules for body and images */
+body {
+    background: gray;
+    background-color: rgb(0, 255, 221);
+}
+
+.antic-regular {
+    font-family: "Antic", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+/* Style rule show mobile class and hide tab-desk class */
+.mobile {
+    display: none;
+}
+
+.tab-desk {
+    display: block;
+}
+
+.mobile-tablet {
+    display: block;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: rgb(209, 155, 56);
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-top: 0.5px solid silver;
+}
+
+nav li a {
+    display: block;
+    color: powderblue;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+#info ul {
+    margin-left: 7%;
+}
+
+#contact, #form, h2 {
+    text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, textarea {
+    margin-bottom: 3%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+#submit {
+    margin: auto;
+    display: block;
+    padding: 3%;
+    background-color: cornflowerblue;
+    color: chocolate;
+    font-size: 1.25em;
+    border-radius: 9px;
+}
+
+#reset {
+    margin: auto;
+    display: block;
+    padding: 3%;
+    background-color: cornflowerblue;
+    color: chocolate;
+    font-size: 1.25em;
+    border-radius: 9px;
+}
+
+/* Style rules for footer content */
+footer {
+    display: block;
+    color: powderblue;
+    background-color: rgb(193, 154, 162);
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a {
+        padding: 2%;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    /*Tablet Viewport: Style rules for form element*/
+    form {
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+    .desktop {
+        display: block; 
+    }
+
+    .mobile-tablet {
+        display: none; 
+    }
+
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+    
+    
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 3%;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    form {
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Style rules for table*/
+    table {
+        border: 2px solid purple;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    th, td {
+        border: 2px solid palevioletred;
+        padding: 2%;
+    }
+
+    th {
+        background-color: plum;
+        color: pink;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    tr:nth-of-type(even) {
+        background-color: rgb(137, 99, 47);
+        color: paleturquoise;
+    }
+    
+    /* Style rules for form elements */
+    fieldset, input, textarea {
+        margin-bottom: 3%;
+    }
+
+    fieldset legend {
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    label {
+        display: block;
+        padding-top: 3%;
+    }
+
+    #submit {
+        margin: auto;
+        display: block;
+        padding: 3%;
+        background-color: rgb(190, 206, 236);
+        color: rgb(216, 158, 117);
+        font-size: 1.25em;
+        border-radius: 9px;
+    }
+} 
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    body {
+        background: linear-gradient(rgb(0, 255, 221), rgb(183, 255, 0));
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+        
+    main {
+        background-color: chocolate;
+    }
+    
+    .grid {
+        display: grid; 
+        grid-template-columns: auto auto;
+    }
+
+    /*Style rules for table*/
+    table {
+        border: 2px solid purple;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    th, td {
+        border: 2px solid palevioletred;
+        padding: 2%;
+    }
+
+    th {
+        background-color: plum;
+        color: pink;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    tr:nth-of-type(even) {
+        background-color: rgb(137, 99, 47);
+        color: paleturquoise;
+    }
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
